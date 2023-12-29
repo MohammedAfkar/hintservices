@@ -1,0 +1,143 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
+/* VARIABLES */
+:root {
+    --font-black: #1f1f1f;
+    --brand-color: #255D8D;
+    --brand-color-light: #4086c4;
+    --brand-rgb: 0, 0, 0;
+    --body: #727272;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+    --font-style:'Roboto', sans-serif;
+}
+
+
+/* RESET & HELPERS */
+body {
+    font-family: var(--font-style);
+    line-height: 1.7;
+    color: var(--body);
+}
+
+ul{
+    list-style: none;
+}
+
+.service-align{
+    margin-left: -1em;
+}
+
+.head{
+    color: var(--brand-color);
+}
+
+/*
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--font-black);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--brand-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}
+
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-img{
+    width: 8em;
+}
+
+#about-img{
+    width: 10em;
+}
+
+*{
+    font-family: var(--font-style);
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--brand-color);
+}
+
+#btn-bg-clr{
+background-color: var(--brand-color);
+border: none;
+}
+
+#home{
+    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+#feature{
+    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/clean.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.feature-img{
+    width: 6em;
+}
+
+.form-box{
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+.service{
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.serv-img{
+    border-radius: 5px;
+}
+
+.feature-card{
+    border-radius: 10px;
+}
+
+.line{
+    width: 120px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--brand-color);
+    margin-bottom: 1em;
+    margin-top: -0.5em;
+}
+
+.brand-logo{
+    width: 20em;
+    height: 5em;
+    background-image: url("../images/Brand-logo.jpg");
+    background-position: center;
+    background-size: cover;
+}
