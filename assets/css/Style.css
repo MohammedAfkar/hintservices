@@ -33,26 +33,27 @@ ul{
     color: var(--brand-color);
 }
 
-/*
-h1, h2, h3,h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 600;
-    color: var(--font-black);
-}
-
-
-
-a {
+a{
     text-decoration: none;
-    color: var(--brand-color);
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--brand-color-light);
+    color: var(--font-black);
 }
 
-*/
+.ul-list{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
 
 img {
     max-width: 100%;
