@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/images/logo-icon.png" type="image/icon type">
     <title>Hint Services</title>
     <link href="assets/css/Style.css" rel="stylesheet">
+    <script src="assets/scripts/script.js"></script>
 </head>
 
 <body>
@@ -60,6 +61,11 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="float-buttns">
+        <div class="whatsapp-btn fixed-bottom m-4"><button class="btn btn-success p-2" onclick="send()"><span class="iconify m-1" data-icon="logos:whatsapp-icon"></span>How can I help you?</button></div>
+        <div class="messenger-chat"></div>
     </section>
 
     <!-- Book Form -->
@@ -292,12 +298,10 @@
                     </p>
                     <h6>Follow us on Social Media</h6>
                     <div class="social-icons">
-                        <a href="#"><span class="iconify" data-icon="ri:instagram-fill"
-                                style="color: #1f1f1f;"></span></a>
-                        <a href="#"><span class="iconify" data-icon="ic:baseline-facebook"
-                                style="color:#1f1f1f;"></span></a>
-                        <a href="#"><span class="iconify" data-icon="simple-icons:x" style="color: #1f1f1f"></span></a>
-                        <a href="#"><span class="iconify" data-icon="bi:youtube" style="color: #1f1f1f"></span></a>
+                        <a href="https://www.instagram.com/hintservices?igsh=MWRtZ3gzYnB0cmQ2eg=="><span class="iconify"
+                                data-icon="ri:instagram-fill" style="color: #1f1f1f;"></span></a>
+                        <a href="https://www.facebook.com/hintservices.au?mibextid=LQQJ4d"><span class="iconify"
+                                data-icon="ic:baseline-facebook" style="color:#1f1f1f;"></span></a>
                     </div>
                 </div>
             </div>
@@ -428,25 +432,79 @@
                 </div>
             </div>
             <div class="row gy-4 gx-4">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 d-flex">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
                             <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
+                                <h6 class="mb-0">Marlin Varghese</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
                                 <div class="text-warning">
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
+                            <p class="fw-light">Exemplary service! The cleaning team from Hint Services exceeded my
+                                expectations. Their attention to detail left my home sparkling clean. Punctual,
+                                professional, and thorough—highly recommended for anyone seeking top-tier cleaning
+                                services!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 d-flex">
+                    <div class="review bg-white" style="border-radius: 10px;">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
+                            <div class="ms-2 mt-2">
+                                <h6 class="mb-0">Smruthy Hariharan</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
+                                <div class="text-warning">
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-head p-3 pt-0 pb-1">
+                            <p class="fw-light">I highly recommend this cleaning team. From the very beginning, they
+                                were professional and responsive. They promptly answered all my inquiries and provided
+                                detailed information about their services.
+                                Their professionalism, attention to detail, and excellent customer service make them
+                                stand out. They truly went above and beyond to ensure my satisfaction. I will definitely
+                                be using their services again in the future.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 d-flex">
+                    <div class="review bg-white" style="border-radius: 10px;">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
+                            <div class="ms-2 mt-2">
+                                <h6 class="mb-0">Deepika Cheran</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
+                                <div class="text-warning">
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-head p-3 pt-0 pb-1">
+                            <p class="fw-light">Reliable and Consistent:
+                                “Hint Services consistently delivers! I’ve been a regular customer, and their
+                                reliability is unmatched. Quality cleaning every time. Dependable team, highly
+                                recommended.”</p>
                         </div>
                     </div>
                 </div>
@@ -456,115 +514,70 @@
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
                             <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
+                                <h6 class="mb-0">Gopal Krishna S</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
                                 <div class="text-warning">
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
+                            <p class="fw-light">What sets Hint Services apart is their personalized touch. They
+                                understand my preferences, and the cleaning feels tailored to my needs. It’s like having
+                                a cleaning service designed just for me.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 d-flex">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
                             <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
+                                <h6 class="mb-0">Jatan Desai</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
                                 <div class="text-warning">
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
+                            <p class="fw-light">Very punctual and has a cleaning service that left my air bnb looking
+                                spotless….. I would highly recommend for domestic cleaning and commercial cleaning.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 d-flex">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
                             <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
+                                <h6 class="mb-0">Jaseem Iqbal</h6>
+                                <small>Reviewed on Google - <span class="fw-light">4 Weeks ago</span></small>
                                 <div class="text-warning">
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
                                     <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
+                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
+                            <p class="fw-light">Great work with no less workmanship, attention to detail and great
+                                interaction.</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="review bg-white" style="border-radius: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
-                            <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
-                                <div class="text-warning">
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-6">
-                    <div class="review bg-white" style="border-radius: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
-                            <div class="ms-2 mt-2">
-                                <h6 class="mb-0">Dianne Russell</h6>
-                                <small>Reviewed on Google - 28/12/2023</small>
-                                <div class="text-warning">
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="iconoir:star-solid"></span>
-                                    <span class="iconify" data-icon="ph:star"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-head p-3 pt-0 pb-1">
-                            <p class="fw-light">Amazing theme ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum animi
-                                rerum ipsam impedit dicta voluptatem.</p>
-                        </div>
-                    </div>
-                </div> 
             </div>
     </section>
 
@@ -576,7 +589,8 @@
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Contact Us</h1>
                         <div class="line mx-auto"></div>
-                        <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic!</p>
+                        <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+                            hic!</p>
                     </div>
                 </div>
             </div>
@@ -600,16 +614,16 @@
                     </div>
                 </div>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="service p-lg-2 p-2">
-                            <div class="iconbox">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service p-lg-2 p-2">
+                        <div class="iconbox">
 
-                            </div>
-                            <h5 class="mt-2 mb-2 fw-bolder head">Address</h5>
-                            <p>33 Flannery Circuit, Geelong, Victoria 3217, Australia</p>
-                            <a href="#booknow" class="btn btn-primary" id="btn-bg-clr">Get Direction</a>
                         </div>
+                        <h5 class="mt-2 mb-2 fw-bolder head">Address</h5>
+                        <p>33 Flannery Circuit, Geelong, Victoria 3217, Australia</p>
+                        <a href="#booknow" class="btn btn-primary" id="btn-bg-clr">Get Direction</a>
                     </div>
+                </div>
 
             </div>
         </div>
@@ -624,15 +638,12 @@
                         <h5>HINT SERVICES</h5>
                         <p>Your Home, Our Professional Expertise</p>
                         <div class="social-icons">
-                            
-                            <a href="#"><span class="iconify" data-icon="ri:instagram-fill"
+
+                            <a href="https://www.instagram.com/hintservices?igsh=MWRtZ3gzYnB0cmQ2eg=="><span
+                                    class="iconify" data-icon="ri:instagram-fill"
                                     style="color: rgb(255, 255, 255);"></span></a>
-                            <a href="#"><span class="iconify" data-icon="ic:baseline-facebook"
-                                    style="color: rgb(255, 255, 255);"></span></a>
-                            <a href="#"><span class="iconify" data-icon="simple-icons:x"
-                                    style="color: rgb(255, 255, 255);"></span></a>
-                            <a href="#"><span class="iconify" data-icon="bi:youtube"
-                                    style="color: rgb(255, 255, 255);"></span></a>
+                            <a href="https://www.facebook.com/hintservices.au?mibextid=LQQJ4d"><span class="iconify"
+                                    data-icon="ic:baseline-facebook" style="color: rgb(255, 255, 255);"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -665,7 +676,8 @@
                         <p class="mb-0">© Copyright 2024 Hint Services, All Rights Reserved</p>
                     </div>
                     <div class="col-auto">
-                        <p class="mb-0">Designed By <a href="https://mohammedafkar.github.io/Portfolio/" class="ul-list fw-bolder">Afkar</a></p>
+                        <p class="mb-0">Designed By <a href="https://mohammedafkar.github.io/Portfolio/"
+                                class="ul-list fw-bolder">Afkar</a></p>
                     </div>
                 </div>
             </div>

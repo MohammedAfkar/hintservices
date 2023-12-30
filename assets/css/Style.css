@@ -61,7 +61,7 @@ img {
 }
 
 .logo-img{
-    width: 8em;
+    width: 10em;
 }
 
 #about-img{
@@ -141,4 +141,8 @@ border: none;
     background-image: url("../images/Brand-logo.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.whatsapp-btn{
+    z-index: 999;
 }
