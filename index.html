@@ -8,9 +8,10 @@
     <title>Hint Services</title>
     <link href="assets/css/Style.css" rel="stylesheet">
     <script src="assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
@@ -26,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home"  data-bs-toggle="collapse" aria-expanded="false">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -49,12 +50,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h5 class="text-white mt-3 mb-4">Refresh Your Space, Leave the Cleaning to Us!</h5>
-                    <h1 class="text-uppercase text-white display-1 fw-bolder">Welcome to Hint Services</h1>
-                    <h5 class="text-white mt-3 mb-4 fw-light">At the heart of our success lies an unwavering commitment
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-down">Refresh Your Space, Leave the Cleaning to Us!</h5>
+                    <h1 class="text-uppercase text-white display-1 fw-bolder" data-aos="fade-right">Welcome to Hint Services</h1>
+                    <h5 class="text-white mt-3 mb-4 fw-light" data-aos="fade-up">At the heart of our success lies an unwavering commitment
                         to excellence. Choose us for an unparalleled cleaning experience, where excellence is not just a
                         goal but a guarantee.</h5>
-                    <div>
+                    <div data-aos="fade-up">
                         <a href="#booknow" class="btn btn-primary ms-lg-2"
                             style="width: 8em; font-weight:bolder; font-size:larger;" id="btn-bg-clr">Book Now</a>
                     </div>
@@ -70,7 +71,7 @@
     </section>
 
     <!-- Book Form -->
-    <section style="margin-top:-5em;" id="booknow" class="section-padding">
+    <section style="margin-top:-5em;" id="booknow" class="section-padding" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -119,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="section-title">
+                    <div class="section-title" data-aos="fade-up">
                         <h1 class="display-4 fw-bolder">Services</h1>
                         <div class="line mx-auto"></div>
                         <p class="fw-light">Restore tranquillity! Let us sweep away the chaos!</p>
@@ -127,7 +128,8 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="col-lg-3 col-sm-6 d-flex">
                     <div class="service p-lg-2 p-2">
                         <div class="iconbox">
@@ -214,7 +216,8 @@
 
 
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="col-12 text-center">
                     <div class="section-title mt-5 fw-bolder">
                         <p>We believe in going the extra mile to make your experiences memorable, whether it's ensuring
@@ -225,9 +228,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
+            <div class="row g-4" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <div class="col-lg-4 col-sm-6 mx-auto d-flex">
-                    <div class="service p-lg-2 p-2">
+                    <div class="service p-lg-2 p-2" data-aos="fade-right">
                         <div class="iconbox">
                             <img src="assets/images/clean.jpg" class="serv-img">
                         </div>
@@ -244,7 +248,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mx-auto d-flex">
+                <div class="col-lg-4 col-sm-6 mx-auto d-flex" data-aos="fade-left">
                     <div class="service p-lg-2 p-2">
                         <div class="iconbox">
                             <img src="assets/images/clean.jpg" class="serv-img">
@@ -270,7 +274,7 @@
     <section id="about" class="section-padding mb-5 mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up">
                     <div class="section-title">
                         <h1 class="display-4 fw-bolder">About us</h1>
                         <div class="line mx-auto"></div>
@@ -280,7 +284,7 @@
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="2000">
@@ -298,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="brand-logo mb-3"></div>
                     <h1>Welcome to Hint Services</h1>
                     <p class="text-justify">where cleanliness meets commitment. We're dedicated to providing top-tier
@@ -333,7 +337,7 @@
     <section id="feature" class="min-vh-100 d-flex align-items-center text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Reliability.png" alt="icon" class="feature-img">
@@ -343,7 +347,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/professional.png" alt="icon" class="feature-img">
@@ -356,7 +360,7 @@
                 </div>
 
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Attention-to-detail.png" alt="icon" class="feature-img">
@@ -369,7 +373,7 @@
                 </div>
 
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Customizable.png" alt="icon" class="feature-img">
@@ -382,7 +386,7 @@
                 </div>
 
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Environment-friendly.png" alt="icon" class="feature-img">
@@ -395,7 +399,7 @@
                 </div>
 
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Affordable.png" alt="icon" class="feature-img">
@@ -407,7 +411,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/available.png" alt="icon" class="feature-img">
@@ -420,7 +424,7 @@
                 </div>
 
 
-                <div class="col-lg-3 col-sm-6 d-flex mt-4">
+                <div class="col-lg-3 col-sm-6 d-flex mt-4" data-aos="zoom-in">
                     <div class="feature-card p-lg-2 p-2 bg-light">
                         <div class="iconbox p-4">
                             <img src="assets/images/Customer-service.png" alt="icon" class="feature-img">
@@ -441,7 +445,7 @@
     <section id="reviews" class="section-padding bg-light mb-5 p-5">
         <div class="container">
             <div class="row mb-3">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up">
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Reviews and Testimonials</h1>
                         <div class="line mx-auto"></div>
@@ -452,7 +456,9 @@
                 </div>
             </div>
             <div class="row gy-4 gx-4">
-                <div class="col-lg-4 col-sm-6 d-flex">
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="100">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -477,7 +483,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 d-flex">
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="150">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -504,7 +512,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 d-flex">
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -529,7 +539,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="250">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -553,7 +565,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 d-flex">
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -576,7 +590,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 d-flex">
+                <div class="col-lg-4 col-sm-6 d-flex" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="350">
                     <div class="review bg-white" style="border-radius: 10px;">
                         <div class="d-flex align-items-center">
                             <img class="rounded-circle m-3" src="./assets/images/dp.jpg" alt="" style="width:4em">
@@ -605,7 +621,7 @@
     <section id="contact" class="mb-5 pb-5">
         <div class="container">
             <div class="row mb-3">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up">
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Contact Us</h1>
                         <div class="line mx-auto"></div>
@@ -615,7 +631,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="100">
                     <div class="service p-lg-2 p-2">
                         <div class="iconbox">
                         </div>
@@ -624,7 +642,9 @@
                         <a href="tel:61434033654" class="btn btn-primary" id="btn-bg-clr">Call Now</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="150">
                     <div class="service p-lg-2 p-2">
                         <div class="iconbox">
                         </div>
@@ -635,7 +655,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-up"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="200">
                     <div class="service p-lg-2 p-2">
                         <div class="iconbox">
 
@@ -652,7 +674,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-white" id="btn-bg-clr">
+    <footer class="text-white" id="btn-bg-clr" data-aos="fade-up">
         <div class="footer-top">
             <div class="container">
                 <div class="row gy-5">
@@ -719,6 +741,8 @@
         })();
     </script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/scripts/main.js"></script>
 
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </body>
