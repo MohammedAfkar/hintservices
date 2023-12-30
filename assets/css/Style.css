@@ -64,10 +64,6 @@ img {
     width: 10em;
 }
 
-#about-img{
-    width: 10em;
-}
-
 *{
     font-family: var(--font-style);
 }
@@ -105,7 +101,7 @@ border: none;
 }
 
 .feature-img{
-    width: 6em;
+    width: 5em;
 }
 
 .form-box{
