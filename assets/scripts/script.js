@@ -6,7 +6,7 @@ function send() {
     window.open(msg, '_blank').focus();
 }
 
-
+/*
 function sendMail() {
 
     let params = {
@@ -16,8 +16,8 @@ function sendMail() {
         message: document.getElementById('message').value
     }
 
-    var serviceID = "service_wvoir6k";
-    var templateID = "template_5v2off8";
-
+    var serviceID = "#";
+    var templateID = "#";
+    
     emailjs.send(serviceID, templateID, params).then(alert("Thank you for choosing HINT SERVICES! Your request has been received, an email confirming your booking details will arrive shortly. If you have any immediate queries, feel free to reach out. Have a wonderful day!"));
-}
+}*/
