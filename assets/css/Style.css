@@ -95,7 +95,7 @@ border: none;
 
 
 #feature{
-    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/clean.jpg');
+    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/bg-1.jpg');
     background-position: center;
     background-size: cover;
 }
