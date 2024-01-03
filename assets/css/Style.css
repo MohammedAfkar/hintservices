@@ -74,11 +74,12 @@ img {
 }
 
 .navbar-nav .nav-link {
-    font-weight: 500;
-    color: var(--font-black);
+    
+    color: var(--body);
 }
 
 .navbar-nav .nav-link.active {
+    font-weight: 500;
     color: var(--brand-color);
 }
 
