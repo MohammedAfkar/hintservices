@@ -89,7 +89,6 @@ a:hover {
     width: 10em;
 }
 
-
 /* HOME */
 #home {
     background: linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/banner-1.jpg');
