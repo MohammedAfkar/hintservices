@@ -8,32 +8,23 @@
     --brand-color-light: #a1c2df;
     --brand-rgb: 0, 0, 0;
     --body: #727272;
-    --box-shadow: 0px 5px 18px rgba(0,0,0,0.08);
+    --box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
-    --font-style:'Roboto', sans-serif;
+    --font-style: 'Roboto', sans-serif;
 }
 
+/* BODY */
+* {
+    font-family: var(--font-style);
+}
 
-/* RESET & HELPERS */
 body {
     font-family: var(--font-style);
     line-height: 1.7;
     color: var(--body);
 }
 
-ul{
-    list-style: none;
-}
-
-.service-align{
-    margin-left: -1.5em;
-}
-
-.head{
-    color: var(--brand-color);
-}
-
-a{
+a {
     text-decoration: none;
     transition: var(--transition);
 }
@@ -42,102 +33,25 @@ a:hover {
     color: var(--font-black);
 }
 
-.ul-list{
-    text-decoration: none;
-    color: white;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.logo-img{
-    width: 10em;
-}
-
-*{
-    font-family: var(--font-style);
-}
-
-/* NAVBAR */
-.navbar {
-    box-shadow: var(--box-shadow);
-}
-
-.navbar-nav .nav-link {
-    
-    color: var(--body);
-}
-
-.navbar-nav .nav-link.active {
-    font-weight: 500;
+.head {
     color: var(--brand-color);
 }
 
-.nav-link:hover{
-    font-weight: 500;
-    color: var(--font-black);
+#btn-bg-clr {
+    background-color: var(--brand-color);
+    border: none;
+    text-decoration: none;
+    color: #fff;
 }
 
-#btn-bg-clr{
-background-color: var(--brand-color);
-border: none;
-text-decoration: none;
-color: #fff;
-}
-
-#btn-bg-clr:hover{
+#btn-bg-clr:hover {
     background-color: var(--font-black);
-border: none;
-text-decoration: none;
-color: var(--brand-color-light);
+    border: none;
+    text-decoration: none;
+    color: var(--brand-color-light);
 }
 
-#home{
-    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/banner-1.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-
-#feature{
-    background:linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/bg-1.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.feature-img{
-    width: 5em;
-}
-
-.form-box{
-    box-shadow: var(--box-shadow);
-    border-radius: 8px;
-}
-
-.service{
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
-}
-
-.serv-img{
-    border-radius: 5px;
-}
-
-.feature-card{
-    border-radius: 10px;
-}
-
-.line{
+.line {
     width: 120px;
     height: 3px;
     border-radius: 10px;
@@ -146,7 +60,74 @@ color: var(--brand-color-light);
     margin-top: -0.5em;
 }
 
-.brand-logo{
+.whatsapp-btn {
+    z-index: 999;
+}
+
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+
+    color: var(--body);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 500;
+    color: var(--brand-color);
+}
+
+.nav-link:hover {
+    font-weight: 500;
+    color: var(--font-black);
+}
+
+.logo-img {
+    width: 10em;
+}
+
+
+/* HOME */
+#home {
+    background: linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* BOOK NOW */
+.form-box {
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+/* SERVICES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service {
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.serv-img {
+    border-radius: 5px;
+}
+
+.service-align {
+    margin-left: -1.5em;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ABOUT US */
+.brand-logo {
     width: 20em;
     height: 5em;
     background-image: url("../images/Brand-logo.jpg");
@@ -154,6 +135,28 @@ color: var(--brand-color-light);
     background-size: cover;
 }
 
-.whatsapp-btn{
-    z-index: 999;
+/* FEATURE */
+#feature {
+    background: linear-gradient(rgba(var(--brand-rgb), 0.700), rgba(var(--brand-rgb), 0.300)), url('../images/bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.feature-img {
+    width: 5em;
+}
+
+.feature-card {
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.ul-list {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
 }
