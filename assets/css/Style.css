@@ -5,7 +5,7 @@
 :root {
     --font-black: #1f1f1f;
     --brand-color: #255D8D;
-    --brand-color-light: #4086c4;
+    --brand-color-light: #a1c2df;
     --brand-rgb: 0, 0, 0;
     --body: #727272;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
@@ -81,6 +81,11 @@ img {
 .navbar-nav .nav-link.active {
     font-weight: 500;
     color: var(--brand-color);
+}
+
+.nav-link:hover{
+    font-weight: 500;
+    color: var(--font-black);
 }
 
 #btn-bg-clr{
