@@ -5,3 +5,4 @@ function send() {
         "Hi, Hint services";
     window.open(msg, '_blank').focus();
 };
+
