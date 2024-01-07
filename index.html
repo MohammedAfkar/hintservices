@@ -51,6 +51,23 @@
         </div>
     </nav>
 
+    <!-- Bootstrap Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="successModalLabel">Success!</h5>
+        </div>
+        <div class="modal-body">
+            Thank you for choosing HINT SERVICES! Your request has been received, an email confirming your booking details will arrive shortly. If you have any immediate queries, feel free to reach out. Have a wonderful day!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light close" data-dismiss="modal" aria-label="Close" id="btn-bg-clr">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <section id="home" class="min-vh-100 d-flex align-items-center text-center">
         <div class="container">
             <div class="row">
@@ -767,21 +784,27 @@
 
     <script>
         $("#submit-form").submit((e) => {
-            e.preventDefault()
+            e.preventDefault();
             $.ajax({
-                url: "https://formsubmit.co/ajax/afkarabi333@gmail.com",
-                data: $("#submit-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Thank you for choosing HINT SERVICES! Your request has been received, an email confirming your booking details will arrive shortly. If you have any immediate queries, feel free to reach out. Have a wonderful day!")
-                    window.location.reload()
-                    $("#submit-form").trigger('reset');
-                },
-                error: function (err) {
-                    alert("Something Went Wrong!! Please refresh the page and try again.")
-                }
-            })
-        })
+              url: "https://formsubmit.co/ajax/afkarabi333@gmail.com",
+              data: $("#submit-form").serialize(),
+              method: "post",
+              success: function (response) {
+                $('#successModal').modal('show');
+    
+                $('#successModal .close').on('click', function() {
+                  // Reload the page
+                  window.location.reload();
+                });
+                
+                //reset the form
+                $("#submit-form").trigger('reset');
+              },
+              error: function (err) {
+                alert("Something Went Wrong!! Please refresh the page and try again.");
+              }
+            });
+          });
     </script>
 
 </body>
