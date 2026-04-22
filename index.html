@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/logo-icon.png" type="image/icon type">
-    <title>Hint Services</title>
+    <link rel="icon" href="assets/images/logo-white.png" type="image/icon type">
+    <title>Hint Services | Professional Cleaning Services</title>
     <link href="assets/css/Style.css" rel="stylesheet">
     <script src="assets/scripts/script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -15,37 +15,40 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/images/logo-transparent.png" class="logo-img" alt="Hint Services">
+    <nav class="navbar navbar-expand-md hero-navbar">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand hero-brand d-inline-flex align-items-center" href="#home">
+                <img src="./assets/images/Hintservices-logo-white.png" class="hero-brand-icon" alt="Hint Services">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler hero-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-link" style="display: flex; justify-content:flex-start;"
-                            href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-                <a href="#booknow" class="btn btn-outline-light ms-lg-3" id="btn-bg-clr">Book Now</a>
+            <div class="collapse navbar-collapse hero-collapse w-100 align-items-center" id="navbarCollapse">
+                <div class="hero-nav-center d-flex flex-grow-1 justify-content-md-center">
+                    <ul class="navbar-nav hero-menu mx-auto mt-3 mt-md-0 p-2 p-md-1 gap-1">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-2" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-2" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-2" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 py-2" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="tel:61434033654"
+                    class="p-2 px-4 hero-phone d-inline-flex align-items-center justify-content-center gap-2 ms-md-auto mt-3 mt-md-0">
+                    <span class="iconify" data-icon="mingcute:phone-fill" data-width="18" data-height="18"></span>
+                    <span class=" text-decoration-none">+61 434 033 654</span>
+                </a>
             </div>
 
         </div>
@@ -68,48 +71,54 @@
     </div>
   </div>
 
-    <section id="home" class="min-vh-100 d-flex align-items-center text-center">
-        <div class="container">
+    <section id="home" class="min-vh-100 d-flex align-items-end">
+        <div class="container home-inner">
             <div class="row">
-                <div class="col-12">
-                    <h5 class="text-white mt-3 mb-4" data-aos="fade-down">Refresh Your Space, Leave the Cleaning to Us!
-                    </h5>
-                    <h1 class="text-uppercase text-white display-1 fw-bolder" data-aos="fade-right">Welcome to Hint
-                        Services</h1>
-                    <h5 class="text-white mt-3 mb-4 fw-light" data-aos="fade-up">At the heart of our success lies an
-                        unwavering commitment
-                        to excellence. Choose us for an unparalleled cleaning experience, where excellence is not just a
-                        goal but a guarantee.</h5>
-                    <div data-aos="fade-up">
-                        <a href="#booknow" class="btn btn-outline-light ms-lg-2"
-                            style="width: 8em; font-weight:bolder; font-size:larger;" id="btn-bg-clr">Book Now</a>
+                <div class="col-xl-6 col-lg-7 col-md-9">
+                    <div class="home-content" data-aos="fade-up">
+                        <h1 class="home-title">Refresh Your Space,  <br><span>Leave the Cleaning to Us!</span></h1>
+                        <p class="home-subtitle">We'll carefully clean your home or office using professional equipment
+                            and eco-friendly products. Punctual. Neat. Guaranteed.</p>
+                        <a href="#booknow" class="home-cta text-decoration-none">Book Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="float-buttns">
-        <div class="whatsapp-btn fixed-bottom m-4"><button class="btn btn-success p-2" onclick="send()"><span
-                    class="iconify m-1" data-icon="logos:whatsapp-icon" data-width="25" data-height="25"></span>How can
+    <section id="">
+        <div class="whatsapp-btn fixed-bottom d-flex justify-content-end m-4 "><button class="btn btn-outline-light p-2 px-4 rounded-3" onclick="send()"><span
+                    class="iconify m-1 text-white" data-icon="ic:baseline-whatsapp" data-width="25" data-height="25"></span>How can
                 I help you?</button></div>
-        <div class="messenger-chat fixed-bottom"><!-- Messenger Chat Plugin Code -->
-            <div id="fb-root"></div>
+        <!-- <div class="messenger-chat fixed-bottom">Messenger Chat Plugin Code -->
+            <!-- <div id="fb-root"></div> -->
         
             <!-- Your Chat Plugin code -->
-            <div id="fb-customer-chat" class="fb-customerchat">
-            </div></div>
+            <!-- <div id="fb-customer-chat" class="fb-customerchat"> -->
+            <!-- </div></div> -->
     </section>
 
     <!-- Book Form -->
-    <section style="margin-top:-5em;" id="booknow" class="section-padding" data-aos="fade-up">
+    <section id="booknow" class="section-padding" data-aos="fade-up">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <form class="row g-3 p-lg-3 p-4 bg-white form-box" id="submit-form" action=""
+            <div class="row align-items-center g-4">
+                <div class="col-lg-5">
+                    <div class="booknow-copy">
+                        <h1 class="booknow-title display-5 fw-bolder">Book Your Service NOW!</h1>
+                        <div class="line"></div>
+                        <p class="text-secondary fw-light mb-0"><span class="iconify mb-1 head"
+                                data-icon="lucide:info"></span> Once you've shared your details and service requirements,
+                            we'll promptly connect with you via email to confirm a convenient site visit. During the
+                            inspection, we'll tailor our services to meet your specific requirements and any additional
+                            details. By this, we ensure a tailored and efficient service for your needs. Get ready to
+                            experience a pristine space with our dedicated cleaning solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="row g-3 p-lg-3 mt-5 bg-white form-box" id="submit-form" action=""
                         onclick="submit_form();">
                         <div class="col-12 text-center">
-                            <h1 class="display-5 fw-bolder">BOOK HERE</h1>
+                            <h1 class="fw-bolder">BOOK HERE</h1>
                             <div class="line mx-auto"></div>
                         </div>
                         <div class="form-group col-lg-6">
@@ -132,12 +141,6 @@
                             <button class="btn btn-link fw-bolder" id="btn-bg-clr" type="submit">Submit</button>
                         </div>
                     </form>
-                    <p class="text-secondary mt-4 fw-light"><span class="iconify mb-1 head"
-                            data-icon="lucide:info"></span> Once you've shared your details and service requirements,
-                        we'll promptly connect with you via email to confirm a convenient site visit. During the
-                        inspection, we'll tailor our services to meet your specific requirements and any additional
-                        details. By this, we ensure a tailored and efficient service for your needs. Get ready to
-                        experience a pristine space with our dedicated cleaning solutions.</p>
                 </div>
             </div>
         </div>
@@ -176,7 +179,7 @@
                             </ul>
 
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
 
@@ -197,7 +200,7 @@
                                 <li>Additional tailored services on request.</li>
                             </ul>
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
                     </div>
@@ -215,7 +218,7 @@
                                 <li>Complete care.<span class="fw-light">(window sills, inside, outside)</span></li>
                             </ul>
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
                     </div>
@@ -235,7 +238,7 @@
                                 <li>Additional tailored services on request.</li>
                             </ul>
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
                     </div>
@@ -268,7 +271,7 @@
                                 <li>Pet/Family/Birthday/Events.</li>
                             </ul>
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
                     </div>
@@ -287,7 +290,7 @@
                                         request).</span></li>
                             </ul>
                         </div>
-                        <div class="m-1 mb-2">
+                        <div class="">
                             <a href="#booknow" class="btn btn-primary ms-lg-2" id="btn-bg-clr">Book Now</a>
                         </div>
                     </div>
@@ -303,55 +306,62 @@
                     <div class="section-title" data-aos="fade-up">
                         <h1 class="display-4 fw-bolder">About us</h1>
                         <div class="line mx-auto"></div>
-                        <p class="fw-light mb-5">About Hint Services: Unveiling Our Cleaning Excellence</p>
+                        <p class="fw-light mb-1">About Hint Services: Unveiling Our Cleaning Excellence</p>
 
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-between align-items-center">
+            <div class="row about-layout g-4 align-items-stretch">
                 <div class="col-lg-6" data-aos="zoom-in">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="2000">
-                                <img src="./assets/images/about-1.jpg" class="d-block w-100" alt="about us"
-                                    style="border-radius: 10px;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/about-2.jpg" data-bs-interval="2000" class="d-block w-100"
-                                    alt="about us" style="border-radius: 10px;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/about-3.jpg" data-bs-interval="2000" class="d-block w-100"
-                                    alt="about us" style="border-radius: 10px;">
+                    <div class="about-media-card h-100">
+                        <div class="about-media-head">
+                            <span class="about-chip">Trusted Team</span>
+                            <span class="about-chip">Eco Friendly</span>
+                        </div>
+                        <div id="carouselExampleAutoplaying" class="carousel slide about-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="assets/images/about-1.jpg" class="d-block w-100" alt="About Hint Services 1">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="assets/images/about-2.jpg" class="d-block w-100" alt="About Hint Services 2">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="assets/images/about-3.jpg" class="d-block w-100" alt="About Hint Services 3">
+                                </div>
                             </div>
                         </div>
+                        <p class="about-media-caption mb-0">Reliable cleaning for homes, Airbnb stays, and offices across Geelong.</p>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="zoom-in">
-                    <div class="brand-logo mb-3"></div>
-                    <h1>Welcome to Hint Services</h1>
-                    <p class="text-justify">where cleanliness meets commitment. We're dedicated to providing top-tier
-                        cleaning services tailored to meet your unique needs. With our team of skilled
-                        professionals, state-of-the-art equipment, and a commitment to quality, we ensure sparkling
-                        results that exceed expectations. Discover a fresh perspective on cleanliness with Hint
-                        Services.
-
-                        Our team is crafted from the finest professionals, dedicated to delivering an unparalleled level
-                        of service that exceeds expectations. We take pride in our meticulous attention to detail, using
-                        top-of-the-line, eco-friendly cleaning products that guarantee a pristine finish while caring
-                        for the environment. Our efficient cleaners are not just experts; they're passionate artisans
-                        who
-                        transform spaces into immaculate sanctuaries. With us, experience punctuality, reliability, and
-                        a commitment to flawless execution, ensuring every corner sparkles with radiance. Trust us for a
-                        transformative cleaning experience that elevates your space to new heights of brilliance!
-                    </p>
-                    <h6>Follow us on Social Media</h6>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/hintservices?igsh=MWRtZ3gzYnB0cmQ2eg=="><span class="iconify"
-                                data-icon="ri:instagram-fill" style="color: #1f1f1f;"></span></a>
-                        <a href="https://www.facebook.com/hintservices.au?mibextid=LQQJ4d"><span class="iconify"
-                                data-icon="ic:baseline-facebook" style="color:#1f1f1f;"></span></a>
-                    </div>
+                    <article class="about-content-card h-100">
+                        <img src="assets/images/Hintservices-logo-black.png" alt="Hint Services logo" class="about-logo mb-4">
+                        <h2 class="about-heading">Welcome to Hint Services</h2>
+                        <p class="about-copy">where cleanliness meets commitment. We're dedicated to providing top-tier
+                            cleaning services tailored to meet your unique needs. With our team of skilled
+                            professionals, state-of-the-art equipment, and a commitment to quality, we ensure sparkling
+                            results that exceed expectations. Discover a fresh perspective on cleanliness with Hint
+                            Services.</p>
+                        <p class="about-copy mb-0">Our team is crafted from the finest professionals, dedicated to delivering an unparalleled level
+                            of service that exceeds expectations. We take pride in our meticulous attention to detail, using
+                            top-of-the-line, eco-friendly cleaning products that guarantee a pristine finish while caring
+                            for the environment. Our efficient cleaners are not just experts; they're passionate artisans
+                            who transform spaces into immaculate sanctuaries. With us, experience punctuality, reliability, and
+                            a commitment to flawless execution, ensuring every corner sparkles with radiance. Trust us for a
+                            transformative cleaning experience that elevates your space to new heights of brilliance!</p>
+                        <div class="about-social-wrap">
+                            <h6 class="about-social-title mb-2">Follow us on Social Media</h6>
+                            <div class="social-icons about-social-icons">
+                                <a href="https://www.instagram.com/hintservices?igsh=MWRtZ3gzYnB0cmQ2eg==" class="about-social-link" aria-label="Instagram">
+                                    <span class="iconify" data-icon="ri:instagram-fill"></span>
+                                </a>
+                                <a href="https://www.facebook.com/hintservices.au?mibextid=LQQJ4d" class="about-social-link" aria-label="Facebook">
+                                    <span class="iconify" data-icon="ic:baseline-facebook"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -688,7 +698,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="text-white" style="background-color:#255D8D" data-aos="fade-up">
+    <footer class="text-white" style="background-color:#1A1C20" data-aos="fade-up">
         <div class="footer-top">
             <div class="container">
                 <div class="row gy-5">
@@ -731,10 +741,10 @@
             <div class="container mt-5">
                 <div class="row g-1 text-center">
                     <div class="col-12">
-                        <p>© Copyright 2024 Hint Services, All Rights Reserved</p>
+                        <p>© Copyright 2026 Hint Services, All Rights Reserved</p>
                     </div>
                     <div class="col-12">
-                        <a href="https://stackatronix.github.io" class="ul-list fw-bolder">Designed By
+                        <a href="https://stackatronixtech.com" class="ul-list fw-bolder">Designed By
                             stackatronix</a>
                     </div>
                 </div>
@@ -742,14 +752,14 @@
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         var chatbox = document.getElementById('fb-customer-chat');
         chatbox.setAttribute("page_id", "101004512948331");
         chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+    </script> -->
   
       <!-- SDK code -->
-      <script>
+      <!-- <script>
         window.fbAsyncInit = function() {
           FB.init({
             xfbml            : true,
@@ -764,7 +774,7 @@
           js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-      </script>
+      </script> -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
